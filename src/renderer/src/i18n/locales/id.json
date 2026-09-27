@@ -1,0 +1,325 @@
+{
+  "settings": {
+    "general": "Umum",
+    "downloadTab": "Unduhan",
+    "title": "Pengaturan",
+    "paths": {
+      "osuStable": "Direktori osu!stable",
+      "osuLazer": "Direktori osu!lazer",
+      "selectFolder": "Pilih Folder",
+      "lazerRedirected": "Data dialihkan ke: {path}",
+      "autoDetectFailed": "Tidak dapat mendeteksi otomatis satu atau lebih direktori osu!. Silakan atur di Pengaturan."
+    },
+    "errors": {
+      "invalidStablePath": "Bukan direktori osu!stable yang valid",
+      "realmNotFound": "Database client.realm tidak ditemukan di direktori"
+    },
+    "downloadOptions": {
+      "threadCount": "Jumlah unduhan bersamaan",
+      "threadCountHelp": "Jumlah unduhan yang dapat dilakukan secara bersamaan. Lebih banyak unduhan lebih cepat, tetapi kurang stabil",
+      "ignoreExisting": "Abaikan beatmap yang sudah ada",
+      "ignoreStable": "Dari osu!stable",
+      "ignoreLazer": "Dari osu!lazer",
+      "other": "Pilihan lain",
+      "noVideo": "Unduh beatmap tanpa video",
+      "waitForDownloads": "Tunggu unduhan selesai saat menjeda",
+      "waitForDownloadsHelpOn": "Saat menjeda, beatmap yang sedang diunduh akan tetap berjalan hingga selesai sebelum antrian dijeda.",
+      "waitForDownloadsHelpOff": "Saat menjeda, beatmap yang sedang diunduh dapat berhenti secara langsung.",
+      "beatconnectTokenHelp": "Masukan BeatConnect API token untuk membuka unduhan berkecepatan tinggi tanpa batas.",
+      "beatconnectTokenSubtitle": "Gunakan BeatConnect API token untuk kuota unduhan tanpa batas dan sinkronisasi otomatis prioritas.",
+      "beatconnectTokenPlaceholder": "Tempel BeatConnect API token di sini...",
+      "beatconnectTokenSave": "Simpan",
+      "beatconnectTokenCancel": "Batal",
+      "beatconnectTokenSaved": "Token terkonfigurasi & terenkripsi.",
+      "beatconnectTokenActiveHint": "Akses API Aktif • Concurrency 5x",
+      "beatconnectTokenChange": "Ubah",
+      "beatconnectTokenClear": "Bersihkan",
+      "beatconnectPatreonLink": "Dapatkan API token",
+      "mirrorsNetwork": "Status Beatmap Mirror",
+      "mirrorsNetworkHelp": "Status live dari mirror beatmap komunitas. Aplikasi secara otomatis menyeimbangkan beban di seluruh mirror online untuk mencegah batas penggunaan.",
+      "mirrorsNetworkSubtitle": "Pool failover multi-mirror otomatis dengan batas concurrency per-mirror.",
+      "mirrorsRefresh": "Menyegarkan status mirror",
+      "mirrorWarpBlocked": "Cloudflare WARP diblokir"
+    },
+    "database": {
+      "title": "Database Beatmap",
+      "stable": "osu!stable",
+      "lazer": "osu!lazer",
+      "lastSync": "Sinkronisasi Terakhir",
+      "never": "Tidak Pernah",
+      "syncNow": "Sinkronisasi Sekarang",
+      "syncing": "Menyinkronkan database...",
+      "upToDate": "Terbaru",
+      "outOfDate": "Ketinggalan",
+      "notConfigured": "Belum dikonfigurasi",
+      "notFound": "Database tidak ditemukan",
+      "totalBeatmapsets": "Beatmapset: {count}",
+      "totalBeatmaps": "Beatmap: {count}",
+      "error": "Terjadi kesalahan yang tidak diketahui."
+    },
+    "reset": {
+      "all": "Atur ulang semua pengaturan",
+      "general": "Kembalikan ke pengaturan awal",
+      "download": "Kembalikan ke pengaturan awal",
+      "warning": "Mengatur ulang pengaturan aplikasi yang tersimpan dan preferensi lokal.",
+      "confirmWarning": "Perhatian: Tindakan ini tidak dapat dibatalkan.",
+      "holdHint": "Tekan dan tahan tombol konfirmasi untuk melanjutkan.",
+      "confirmAction": "Tahan untuk mengonfirmasi pengaturan awal",
+      "cancel": "Batal",
+      "success": "Pengaturan ulang berhasil. Aplikasi akan memulai ulang.",
+      "failed": "Gagal mengembalikan pengaturan awal."
+    },
+    "diagnostic": {
+      "title": "Diagnostik & Logs",
+      "description": "Ekstrak detail konfigurasi dan log terkini untuk mendiagnosis masalah.",
+      "copyInfo": "Salin Diagnostik",
+      "copied": "Tersalin!",
+      "openLogFolder": "Buka Folder Log",
+      "copySuccess": "Informasi diagnostik tersalin ke clipboard.",
+      "copyFailed": "Gagal menyalin informasi diagnostik."
+    },
+    "about": {
+      "title": "Tentang",
+      "description": "Sebuah alat untuk melakukan pencadangan dan sinkronisasi koleksi beatmap untuk osu!stable dan osu!lazer.",
+      "installationType": "Distribusi"
+    }
+  },
+  "backup": {
+    "title": "Pencadangan Beatmap",
+    "backupBeatmapTitle": "Pencadangan beatmap",
+    "button": "Pencadangan",
+    "sources": {
+      "title": "Sumber"
+    },
+    "content": {
+      "title": "Backup content",
+      "onlineIds": "Online beatmapset IDs",
+      "localBeatmaps": "Offline beatmaps (has no online ID)",
+      "localBeatmapsPending": "· Offline beatmapsets will be exported as .osz files. Collections are not supported.",
+      "onlineIdsPending": "· Beatmapset IDs can be used to download beatmapsets on the Download page."
+    },
+    "success": "Successfully backed up {count} beatmaps",
+    "localSuccess": "Exported {count} beatmaps from {source} to .osz files",
+    "combinedLocalSuccess": "Exported {stable} stable + {lazer} lazer beatmaps to .osz files",
+    "error": "Backup failed",
+    "cancelled": "Backup cancelled",
+    "estimate": "Estimated output: {count} beatmapset IDs (~{size})",
+    "estimatePrefix": "Estimated output: {details}",
+    "onlineEstimate": "{count} beatmapset IDs (~{size})",
+    "localEstimate": "{count} offline beatmapsets",
+    "localProgress": "Exporting offline beatmaps: {current}/{total} ({percent}%)",
+    "estimateUnavailable": "Could not estimate backup size with current settings.",
+    "collection": {
+      "enabled": "Choose collection(s) to backup",
+      "mergeByName": "Merge collections with the same name",
+      "syncNow": "Resolve missing beatmaps",
+      "secondsShort": "s",
+      "loading": "Loading collections...",
+      "empty": "No collections found for selected sources.",
+      "successStats": "Backed up {count} beatmaps (pending sync: {pending}, missing local: {missing}, api not found: {notFound})",
+      "status": {
+        "resolved": "available",
+        "pending": "pending",
+        "notFound": "not found",
+        "missingLocal": "offline"
+      },
+      "sources": {
+        "stable": "stable",
+        "lazer": "lazer",
+        "both": "both"
+      },
+      "table": {
+        "name": "Koleksi",
+        "maps": "Beatmap",
+        "source": "Source",
+        "status": "Status"
+      },
+      "errors": {
+        "stableReadFailed": "Gagal untuk membaca koleksi osu!stable: {error}",
+        "lazerReadFailed": "Gagal untuk membaca koleksi osu!lazer: {error}"
+      }
+    }
+  },
+  "download": {
+    "title": "Unduh beatmap",
+    "selectFile": "Pilih sebuah file (.bbak)",
+    "path": "Simpan ke...",
+    "fileRequired": "File dibutuhkan",
+    "button": "Unduh",
+    "started": "Unduhan dimulai",
+    "finished": "{success} beatmap diunduh",
+    "finishedWithErrors": "{success}/{total} beatmap diunduh · {failed} gagal",
+    "cancelled": "Pengunduhan dibatalkan",
+    "recovery": {
+      "title": "Pulihkan antrian unduhan sebelumnnya",
+      "description": "Antrian unduhan sebelumnya dengan {total} beatmap ditemukan.",
+      "hint": "You can continue from the saved state, or discard it and start fresh.",
+      "stats": "Menunggu: {waiting} · Mengunduh: {downloading}",
+      "resume": "Lanjutkan",
+      "discard": "Buang",
+      "discardConfirm": "Discarding will permanently remove the saved queue state.",
+      "discardConfirmButton": "Konfirmasi buang",
+      "resumeFailed": "Gagal untuk melanjutkan antrian tersimpan",
+      "discardFailed": "Gagal untuk membuang antrian tersimpan"
+    },
+    "errors": {
+      "getFilePath": "Gagal untuk mendapatkan path file",
+      "downloadPathNotExist": "Path unduhan tidak ada",
+      "downloadPathNotDirectory": "Path unduhan bukan sebuah direktori",
+      "downloadPathNoPermission": "Tidak ada izin tulis di path unduhan",
+      "downloadPathInvalid": "Path unduhan tidak valid",
+      "allBeatmapsExist": "Semua beatmap sudah ada di direktori unduhan"
+    },
+    "manager": {
+      "queueOverview": "Antrian Unduhan",
+      "running": "Mengunduh",
+      "paused": "Dijeda",
+      "queuePaused": "Antrian Pengunduhan Dijeda",
+      "progress": "Overall Progress",
+      "files": "file",
+      "activeDownloads": "Currently downloading files",
+      "completedDownloads": "Completed files",
+      "failedDownloads": "Failed files",
+      "noActiveDownloads": "No files are downloading right now",
+      "noCompletedDownloads": "No completed files yet",
+      "retryFailed": "Retry Failed",
+      "retryStarted": "Retrying {count} failed downloads...",
+      "exportFailed": "Export Failed (.bbak)",
+      "exportSuccess": "Exported {count} failed beatmaps to .bbak file",
+      "closeManager": "Close Manager",
+      "failedReasons": {
+        "notFound": "Not found on mirror (404)",
+        "rateLimit": "Mirror rate limited (429)",
+        "timeout": "Connection timed out",
+        "network": "Kesalahan koneksi jaringan",
+        "unknown": "Kesalahan tidak diketahui"
+      },
+      "pause": "Jeda Antrian",
+      "resume": "Lanjutkan Antrian",
+      "stop": "Hentikan Unduhan",
+      "stopConfirmYes": "Konfirmasi hentikan",
+      "stopConfirmNo": "Batal",
+      "table": {
+        "status": "Status",
+        "filename": "Nama File",
+        "id": "ID",
+        "beatmapName": "Nama Beatmap",
+        "reason": "Alasan",
+        "speed": "Kecepatan",
+        "progress": "Progres",
+        "remaining": "Tersisa",
+        "actions": "Actions",
+        "openFolder": "Buka Folder"
+      },
+      "status": {
+        "waiting": "Menunggu",
+        "downloading": "Mengunduh",
+        "completed": "Selesai",
+        "error": "Kesalahan"
+      }
+    }
+  },
+  "filter": {
+    "title": "Filter Beatmap",
+    "criteriaTitle": "Filter Criteria",
+    "gameMode": "Game Mode",
+    "difficulty": "Kesulitan & Stats",
+    "status": "Status",
+    "statusOptions": {
+      "any": "Any",
+      "hasLeaderboard": "Mempunyai Leaderboard",
+      "ranked": "Ranked",
+      "loved": "Loved",
+      "approved": "Approved",
+      "qualified": "Qualified",
+      "unranked": "Unranked"
+    },
+    "stars": "Bintang",
+    "bpm": "BPM",
+    "cs": "CS",
+    "keys": "Keys",
+    "keysRange": "{min}K - {max}K",
+    "ar": "AR",
+    "hp": "HP",
+    "od": "OD",
+    "length": "Panjang",
+    "search": "Cari (Artis, Judul, Mapper, Tags, Sumber)",
+    "searchPlaceholder": "Ketik untuk mencari...",
+    "resetAll": "Reset All",
+    "results": {
+      "title": "Hasil",
+      "summary": "{beatmaps} beatmap · {sets} beatmapset · {ms} ms",
+      "empty": "No beatmaps matched these filters.",
+      "loading": "Filtering beatmaps...",
+      "unicodeTooltip": "Tunjukkan metadata di bahasa asli",
+      "export": "Ekspor Cadangan (.bbak)",
+      "exporting": "Mengekspor...",
+      "exportSuccess": "Exported {count} beatmapset IDs to file",
+      "exportError": "Gagal mengekspor cadangan",
+      "pageSize": "Per page",
+      "columns": {
+        "title": "Judul / Artis",
+        "version": "Kesulitan",
+        "stars": "Bintang",
+        "bpm": "BPM",
+        "stats": "CS / AR / HP / OD",
+        "length": "Panjang"
+      }
+    }
+  },
+  "language": {
+    "title": "Bahasa"
+  },
+  "navigation": {
+    "settings": "Pengaturan",
+    "backup": "Pencadangan",
+    "download": "Unduh",
+    "beatmapFilter": "Filter"
+  },
+  "theme": {
+    "dark": "Mode Gelap",
+    "light": "Mode Terang"
+  },
+  "notifications": {
+    "download": {
+      "completed": {
+        "title": "Pengunduhan Selesai"
+      }
+    },
+    "actions": {
+      "openFolder": "Buka Folder",
+      "dismiss": "Tutup"
+    },
+    "syncError": {
+      "message": "Sinkronisasi database gagal: {error}",
+      "viewSettings": "Lihat Pengaturan"
+    }
+  },
+  "updater": {
+    "checkUpdate": "Periksa pembaruan",
+    "checking": "Memeriksa pembaruan...",
+    "upToDate": "Anda berada pada versi terbaru!",
+    "newVersionAvailable": "Versi baru tersedia",
+    "portableNotice": "Anda menjalankan versi Portable. Silahkan kunjungi GitHub Releases untuk mengunduh file zip terbaru dan mengganti folder Anda saat ini.",
+    "linuxNotice": "Click below to download the latest AppImage file directly to your Downloads folder.",
+    "changelog": "Apa yang baru:",
+    "downloading": "Mengunduh pembaruan...",
+    "defaultError": "Tidak dapat memerika pembaruan. Tolong periksa koneksi internet Anda.",
+    "cancel": "Batal",
+    "downloadAndInstall": "Perbarui Sekarang",
+    "goToRelease": "Pergi ke Releases",
+    "downloadAppImage": "Unduh AppImage",
+    "restartAndInstall": "Mulai Ulang & Pasang",
+    "checkingShort": "Memeriksa...",
+    "upToDateShort": "Terbaru",
+    "downloadNow": "Perbarui Sekarang",
+    "relaunchInstall": "Mulai Ulang & Pasang",
+    "downloadedShort": "Tersimpan di Downloads",
+    "errorRetry": "Pemeriksaan gagal · Coba Lagi",
+    "downloadErrorRetry": "Unduhan gagal · Coba Lagi",
+    "installConflictTitle": "Pengunduhan Sedang Berlangsung",
+    "installConflictMsg": "{count} beatmap masih mengunduh.",
+    "installConflictDetail": "Progres akan disimpan dan dapat dilanjutkan ketika aplikasi dibuka kembali.",
+    "installConflictConfirm": "Mulai Ulang & Pasang"
+  }
+}
